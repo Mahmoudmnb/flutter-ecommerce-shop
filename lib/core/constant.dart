@@ -1,4 +1,4 @@
-import '../featurs/auth/models/user_model.dart';
+import 'package:shop_app/features/auth/models/user_model.dart';
 
 class Constant {
   static String dateToString(DateTime date) {
@@ -9,8 +9,14 @@ class Constant {
     var d = strDate.split('|');
     var time = d[0].split(':');
     var date = d[1].split('/');
-    return DateTime(int.parse(date[2]), int.parse(date[1]), int.parse(date[0]),
-        int.parse(time[0]), int.parse(time[1]), int.parse(time[2]));
+    return DateTime(
+      int.parse(date[2]),
+      int.parse(date[1]),
+      int.parse(date[0]),
+      int.parse(time[0]),
+      int.parse(time[1]),
+      int.parse(time[2]),
+    );
   }
 
   static List<dynamic> stringToList(String list) {
@@ -58,7 +64,7 @@ class Constant {
       'date': dateToString(DateTime.now()),
       'rating': 2,
       'category': 'shirt',
-      'isFavorate': 0
+      'isFavorate': 0,
     },
     {
       'name': 'Striped cotton shirt',
@@ -72,7 +78,7 @@ class Constant {
       'date': dateToString(DateTime.now()),
       'rating': 5,
       'category': 'shirt',
-      'isFavorate': 0
+      'isFavorate': 0,
     },
     {
       'name': 'Grey cotton shirt',
@@ -86,7 +92,7 @@ class Constant {
       'date': dateToString(DateTime.now()),
       'rating': 3,
       'category': 'pants',
-      'isFavorate': 0
+      'isFavorate': 0,
     },
     {
       'name': 'Brown cotton shirt',
@@ -101,7 +107,7 @@ class Constant {
       'date': dateToString(DateTime.now()),
       'rating': 5,
       'category': 'shirt',
-      'isFavorate': 0
+      'isFavorate': 0,
     },
     {
       'name': 'Black cotton shirt',
@@ -115,7 +121,7 @@ class Constant {
           'assets/images/11.jpg|assets/images/13.jpg|assets/images/11.jpg|assets/images/9.jpg',
       'discount': 50,
       'date': dateToString(DateTime.now()),
-      'isFavorate': 0
+      'isFavorate': 0,
     },
     {
       'name': 'Coffee polo shirt',
@@ -128,7 +134,7 @@ class Constant {
       'imgUrl': 'assets/images/1.png',
       'discount': 30,
       'date': dateToString(DateTime.now()),
-      'isFavorate': 0
+      'isFavorate': 0,
     },
   ];
 
@@ -140,7 +146,7 @@ class Constant {
           'Greate shirt ,perfect fit the design is stylish and versatil',
       'stars': 5,
       'userImage': 'assets/images/7.jpg',
-      'productId': 0
+      'productId': 0,
     },
     {
       'userName': 'ahmad',
@@ -148,7 +154,7 @@ class Constant {
       'description': 'Greate shirt ,perfect fit ',
       'stars': 2,
       'userImage': 'assets/images/1.png',
-      'productId': 0
+      'productId': 0,
     },
     {
       'userName': 'fatema',
@@ -157,7 +163,7 @@ class Constant {
           'Greate shirt ,perfect fit the design is stylish and versatil and ites very very very very very very very very very very  good',
       'stars': 5,
       'userImage': 'assets/images/2.png',
-      'productId': 0
+      'productId': 0,
     },
     {
       'userName': 'mohammad',
@@ -165,7 +171,7 @@ class Constant {
       'description': 'very   good',
       'stars': 1,
       'userImage': 'assets/images/7.jpg',
-      'productId': 0
+      'productId': 0,
     },
     {
       'userName': 'bahaa',
@@ -173,7 +179,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 1
+      'productId': 1,
     },
     {
       'userName': 'abooooood',
@@ -181,7 +187,7 @@ class Constant {
       'description': ' its so bad and awful',
       'stars': 0,
       'userImage': 'assets/images/9.jpg',
-      'productId': 1
+      'productId': 1,
     },
     {
       'userName': 'ahmad',
@@ -189,7 +195,7 @@ class Constant {
       'description': 'Greate shirt ,perfect fit ',
       'stars': 2,
       'userImage': 'assets/images/1.png',
-      'productId': 2
+      'productId': 2,
     },
     {
       'userName': 'fatema',
@@ -198,7 +204,7 @@ class Constant {
           'Greate shirt ,perfect fit the design is stylish and versatil and ites very very very very very very very very very very  good',
       'stars': 5,
       'userImage': 'assets/images/2.png',
-      'productId': 2
+      'productId': 2,
     },
     {
       'userName': 'mohammad',
@@ -206,7 +212,7 @@ class Constant {
       'description': 'very   good',
       'stars': 1,
       'userImage': 'assets/images/7.jpg',
-      'productId': 2
+      'productId': 2,
     },
     {
       'userName': 'bahaa',
@@ -214,7 +220,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 3
+      'productId': 3,
     },
     {
       'userName': 'abooooood',
@@ -222,7 +228,7 @@ class Constant {
       'description': ' its so bad and awful',
       'stars': 0,
       'userImage': 'assets/images/9.jpg',
-      'productId': 3
+      'productId': 3,
     },
     {
       'userName': 'bahaa',
@@ -230,7 +236,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 3
+      'productId': 3,
     },
     {
       'userName': 'bahaa',
@@ -238,7 +244,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 3
+      'productId': 3,
     },
     {
       'userName': 'bahaa',
@@ -246,7 +252,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 3
+      'productId': 3,
     },
     {
       'userName': 'bahaa',
@@ -254,7 +260,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 4
+      'productId': 4,
     },
     {
       'userName': 'abooooood',
@@ -262,7 +268,7 @@ class Constant {
       'description': ' its so bad and awful',
       'stars': 0,
       'userImage': 'assets/images/9.jpg',
-      'productId': 4
+      'productId': 4,
     },
     {
       'userName': 'bahaa',
@@ -270,7 +276,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 4
+      'productId': 4,
     },
     {
       'userName': 'bahaa',
@@ -278,7 +284,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 4
+      'productId': 4,
     },
     {
       'userName': 'bahaa',
@@ -286,7 +292,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 4
+      'productId': 4,
     },
     {
       'userName': 'bahaa',
@@ -294,7 +300,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 5
+      'productId': 5,
     },
     {
       'userName': 'abooooood',
@@ -302,7 +308,7 @@ class Constant {
       'description': ' its so bad and awful',
       'stars': 0,
       'userImage': 'assets/images/9.jpg',
-      'productId': 5
+      'productId': 5,
     },
     {
       'userName': 'bahaa',
@@ -310,7 +316,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 5
+      'productId': 5,
     },
     {
       'userName': 'bahaa',
@@ -318,7 +324,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 5
+      'productId': 5,
     },
     {
       'userName': 'bahaa',
@@ -326,7 +332,7 @@ class Constant {
       'description': 'not pad',
       'stars': 1,
       'userImage': 'assets/images/2.png',
-      'productId': 5
+      'productId': 5,
     },
   ];
 }

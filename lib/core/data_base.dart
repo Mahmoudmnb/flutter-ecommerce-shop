@@ -13,7 +13,8 @@ class MyDataBase {
         version: 2,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE recommended (id INTEGER PRIMARY KEY , productId INT NOT NULL, freq INT NOT NULL)');
+            'CREATE TABLE recommended (id INTEGER PRIMARY KEY , productId INT NOT NULL, freq INT NOT NULL)',
+          );
         },
       );
       log('recommended table created');
@@ -31,7 +32,8 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE borders (id INTEGER PRIMARY KEY , borderName TEXT NOT NULL)');
+            'CREATE TABLE borders (id INTEGER PRIMARY KEY , borderName TEXT NOT NULL)',
+          );
         },
       );
       log('borders table created');
@@ -49,7 +51,8 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE borderProducts (id INTEGER PRIMARY KEY, productId INT NOT NULL,borderId INT NOT NULL)');
+            'CREATE TABLE borderProducts (id INTEGER PRIMARY KEY, productId INT NOT NULL,borderId INT NOT NULL)',
+          );
         },
       );
       log('borders products table created');
@@ -68,7 +71,8 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE AddToCartTable (id INTEGER PRIMARY KEY , order_id INT NOT NULL, imgUrl TEXT NOT NULL, quantity INTEGER NOT NULL, productId INT NOT NULL, productName TEXT NOT NULL ,price DOUBLE NOT NULL, companyMaker TEXT NOT NULL , color TEXT NOT NULL , size  TEXT NOT NULL)');
+            'CREATE TABLE AddToCartTable (id INTEGER PRIMARY KEY , order_id INT NOT NULL, imgUrl TEXT NOT NULL, quantity INTEGER NOT NULL, productId INT NOT NULL, productName TEXT NOT NULL ,price DOUBLE NOT NULL, companyMaker TEXT NOT NULL , color TEXT NOT NULL , size  TEXT NOT NULL)',
+          );
         },
       );
       log('Add to cart table created');
@@ -86,7 +90,8 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE locations (id TEXT PRIMARY KEY , firstName TEXT NOT NULL,lastName TEXT NOT NULL, phoneNumber TEXT NOT NULL , emailAddress TEXT NOT NULL, addressName TEXT NOT NULL , longitude_code TEXT NOT NULL , latitude_code  TEXT NOT NULL,city TEXT NOT NULL ,country TEXT NOT NULL ,address TEXT NOT NULL)');
+            'CREATE TABLE locations (id TEXT PRIMARY KEY , firstName TEXT NOT NULL,lastName TEXT NOT NULL, phoneNumber TEXT NOT NULL , emailAddress TEXT NOT NULL, addressName TEXT NOT NULL , longitude_code TEXT NOT NULL , latitude_code  TEXT NOT NULL,city TEXT NOT NULL ,country TEXT NOT NULL ,address TEXT NOT NULL)',
+          );
         },
       );
       log('locations table created');
@@ -131,7 +136,8 @@ class MyDataBase {
       version: 1,
       onCreate: (db, version) async {
         db.execute(
-            'CREATE TABLE reviews (id INTEGER PRIMARY KEY , description TEXT NOT NULL , stars INTEGER NOT NULL , date TEXT NOT NULL , userName TEXT NOT NULL , email TEXT NOT NULL, userImage TEXT , productId INTEGER NOT NULL )');
+          'CREATE TABLE reviews (id INTEGER PRIMARY KEY , description TEXT NOT NULL , stars INTEGER NOT NULL , date TEXT NOT NULL , userName TEXT NOT NULL , email TEXT NOT NULL, userImage TEXT , productId INTEGER NOT NULL )',
+        );
       },
     );
     log('created');
@@ -154,11 +160,12 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              '''CREATE TABLE products (id INTEGER PRIMARY KEY, name TEXT NOT NULL , price DECIMAL NOT NULL , 
+            '''CREATE TABLE products (id INTEGER PRIMARY KEY, name TEXT NOT NULL , price DECIMAL NOT NULL , 
               makerCompany TEXT NOT NULL , sizes TEXT NOT NULL , colors TEXT NOT NULL , discription TEXT NOT NULL , 
               imgUrl TEXT NOT NULL ,discount DECIMAL NOT NULL , date TEXT NOT NULL , category TEXT , rating INTEGER ,
               isFavorate BOOLEAN,isNew BOOLEAN,isDiscountUpdated BOOLEAN)
-              ''');
+              ''',
+          );
         },
       );
       log('products table created');
@@ -176,7 +183,8 @@ class MyDataBase {
         version: 1,
         onCreate: (db, version) async {
           db.execute(
-              'CREATE TABLE searchHistory (id INTEGER PRIMARY KEY , word TEXT NOT NULL , count INTEGER NOT NULL )');
+            'CREATE TABLE searchHistory (id INTEGER PRIMARY KEY , word TEXT NOT NULL , count INTEGER NOT NULL )',
+          );
         },
       );
       log('created');

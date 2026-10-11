@@ -1,0 +1,11 @@
+export 'package:shop_app/features/product_details/widgets/custom_icon_button.dart';
+export 'package:shop_app/features/product_details/widgets/similar_item.dart';
+export 'package:shop_app/features/product_details/widgets/custom_list_tile.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/add_to_cart_bottom_sheet.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/custom_card.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/product_details.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/product_view_custom_button.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/set_color.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/set_size.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/similar_product_card.dart';
+export 'package:shop_app/features/product_details/widgets/product_view/reviews_card.dart';

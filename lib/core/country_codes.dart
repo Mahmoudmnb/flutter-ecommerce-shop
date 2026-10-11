@@ -28,7 +28,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Bolivia, Plurinational State of",
     "dial_code": "+591",
-    "code": "BO"
+    "code": "BO",
   },
   {"name": "Bosnia and Herzegovina", "dial_code": "+387", "code": "BA"},
   {"name": "Botswana", "dial_code": "+267", "code": "BW"},
@@ -55,7 +55,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Congo, The Democratic Republic of the Congo",
     "dial_code": "+243",
-    "code": "CD"
+    "code": "CD",
   },
   {"name": "Cook Islands", "dial_code": "+682", "code": "CK"},
   {"name": "Costa Rica", "dial_code": "+506", "code": "CR"},
@@ -109,7 +109,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Iran, Islamic Republic of Persian Gulf",
     "dial_code": "+98",
-    "code": "IR"
+    "code": "IR",
   },
   {"name": "Iraq", "dial_code": "+964", "code": "IQ"},
   {"name": "Ireland", "dial_code": "+353", "code": "IE"},
@@ -126,7 +126,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Korea, Democratic People's Republic of Korea",
     "dial_code": "+850",
-    "code": "KP"
+    "code": "KP",
   },
   {"name": "Korea, Republic of South Korea", "dial_code": "+82", "code": "KR"},
   {"name": "Kuwait", "dial_code": "+965", "code": "KW"},
@@ -157,7 +157,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Micronesia, Federated States of Micronesia",
     "dial_code": "+691",
-    "code": "FM"
+    "code": "FM",
   },
   {"name": "Moldova", "dial_code": "+373", "code": "MD"},
   {"name": "Monaco", "dial_code": "+377", "code": "MC"},
@@ -187,7 +187,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Palestinian Territory, Occupied",
     "dial_code": "+970",
-    "code": "PS"
+    "code": "PS",
   },
   {"name": "Panama", "dial_code": "+507", "code": "PA"},
   {"name": "Papua New Guinea", "dial_code": "+675", "code": "PG"},
@@ -207,7 +207,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Saint Helena, Ascension and Tristan Da Cunha",
     "dial_code": "+290",
-    "code": "SH"
+    "code": "SH",
   },
   {"name": "Saint Kitts and Nevis", "dial_code": "+1869", "code": "KN"},
   {"name": "Saint Lucia", "dial_code": "+1758", "code": "LC"},
@@ -216,7 +216,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Saint Vincent and the Grenadines",
     "dial_code": "+1784",
-    "code": "VC"
+    "code": "VC",
   },
   {"name": "Samoa", "dial_code": "+685", "code": "WS"},
   {"name": "San Marino", "dial_code": "+378", "code": "SM"},
@@ -236,7 +236,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "South Georgia and the South Sandwich Islands",
     "dial_code": "+500",
-    "code": "GS"
+    "code": "GS",
   },
   {"name": "Spain", "dial_code": "+34", "code": "ES"},
   {"name": "Sri Lanka", "dial_code": "+94", "code": "LK"},
@@ -252,7 +252,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Tanzania, United Republic of Tanzania",
     "dial_code": "+255",
-    "code": "TZ"
+    "code": "TZ",
   },
   {"name": "Thailand", "dial_code": "+66", "code": "TH"},
   {"name": "Timor-Leste", "dial_code": "+670", "code": "TL"},
@@ -276,7 +276,7 @@ List<Map<String, String>> countryCodes = [
   {
     "name": "Venezuela, Bolivarian Republic of Venezuela",
     "dial_code": "+58",
-    "code": "VE"
+    "code": "VE",
   },
   {"name": "Vietnam", "dial_code": "+84", "code": "VN"},
   {"name": "Virgin Islands, British", "dial_code": "+1284", "code": "VG"},
@@ -284,5 +284,5 @@ List<Map<String, String>> countryCodes = [
   {"name": "Wallis and Futuna", "dial_code": "+681", "code": "WF"},
   {"name": "Yemen", "dial_code": "+967", "code": "YE"},
   {"name": "Zambia", "dial_code": "+260", "code": "ZM"},
-  {"name": "Zimbabwe", "dial_code": "+263", "code": "ZW"}
+  {"name": "Zimbabwe", "dial_code": "+263", "code": "ZW"},
 ];
