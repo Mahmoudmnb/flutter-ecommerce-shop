@@ -12,31 +12,27 @@ This project was built as an open-source portfolio application and demonstrates 
 
 The app includes:
 
-- user authentication
-- product browsing
-- category filtering
-- search
-- product details
-- wishlist management
-- shopping bag/cart
-- checkout flow
-- order management
-- product reviews
-- profile management
-- address management
-- map/location support
-- local persistence
-- cloud-backed data handling
+- User authentication
+- Product browsing
+- Category filtering
+- Search
+- Product details
+- Wishlist management
+- Shopping bag/cart
+- Checkout flow
+- Order management
+- Product reviews
+- Profile management
+- Address management
+- Map/location support
+- Local persistence
+- Cloud-backed data handling
 
 The project is designed as a practical end-to-end mobile commerce experience rather than a simple UI-only demo.
 
 ---
 
 ## 📱 App Preview
-
-> Add the screens overview image to:
->
-> `docs/images/app-screens-overview.png`
 
 <p align="center">
   <img src="docs/images/app-screens-overview.png" alt="Elegance app screens overview" width="100%">
@@ -52,23 +48,24 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 
 ---
 
-
-
 ## 🚀 Features
 
 ### Authentication
+
 - Sign in / sign up flow
 - Password visibility toggle
 - Email validation support
 - Splash screen and onboarding/initial flow
 
 ### Product Browsing
+
 - Home page with featured and discounted products
 - Browse product categories
 - View product collections
 - Explore recommended and trendy items
 
 ### Search & Discovery
+
 - Search for products
 - Recent searches
 - Popular search suggestions
@@ -76,6 +73,7 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 - Filter drawer for refining results
 
 ### Product Details
+
 - View full product details
 - Select product size and color
 - Add products to shopping bag
@@ -84,40 +82,47 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 - View all reviews for a product
 
 ### Wishlist
+
 - Save favorite products
 - Manage wishlist items
 - Switch between wishlist presentation modes
 
 ### Shopping Bag / Cart
+
 - Add and remove products
 - Update selected item variants
 - Manage cart quantities
 - View pricing details before checkout
 
 ### Checkout
+
 - Multi-step checkout flow
 - Manage delivery addresses
 - Select payment and delivery methods
 - Review order summary before confirming purchase
 
 ### Orders & Reviews
+
 - View placed orders
 - Open order details
 - Rate completed orders
 - Submit reviews
 
 ### Profile & Settings
+
 - View and edit personal details
 - Manage shopping addresses
 - Access profile-related order views
 - Settings screen
 
 ### Maps & Location
+
 - Google Maps integration
 - Geolocation support
 - Address/location selection for delivery
 
 ### Persistence & Backend
+
 - Local storage using SQLite
 - SharedPreferences for lightweight persisted settings/state
 - Cloud-backed data operations with Appwrite
@@ -128,32 +133,39 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 ## 🧱 Tech Stack
 
 ### Framework
+
 - Flutter
 - Dart
 
 ### State Management
+
 - `flutter_bloc`
 - Cubit / BLoC
 
 ### Local Persistence
+
 - `sqflite`
 - `shared_preferences`
 
 ### Backend / Cloud
+
 - `appwrite`
 
 ### Maps / Location
+
 - `google_maps_flutter`
 - `geolocator`
 - `geocoding`
 
 ### Networking / Utilities
+
 - `http`
 - `dartz`
 - `get_it`
 - `cached_network_image`
 
 ### UI / UX
+
 - `flutter_screenutil`
 - `flutter_staggered_animations`
 - `animated_text_kit`
@@ -162,6 +174,7 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 - `smooth_star_rating_null_safety`
 
 ### Extra Integrations
+
 - `image_picker`
 - `flutter_paypal_checkout`
 - `better_open_file`
@@ -172,31 +185,31 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 
 The project follows a **feature-based Flutter structure** with shared core services and data sources.
 
-### Main architectural ideas
+### Main Architectural Ideas
 
 - **`lib/core/`**
-  - common constants
-  - local database helpers
-  - internet utilities
-  - data-source abstractions and implementations
+  - Common constants
+  - Local database helpers
+  - Internet utilities
+  - Data-source abstractions and implementations
 
 - **`lib/features/`**
-  - app functionality grouped by feature
-  - each feature contains only the files relevant to that domain
-  - examples: `auth`, `home`, `search`, `wishlist`, `checkout`, `orders`, `profile`
+  - Application functionality grouped by feature
+  - Each feature contains the files relevant to that domain
+  - Examples include `auth`, `home`, `search`, `wishlist`, `checkout`, `orders`, and `profile`
 
 - **BLoC / Cubit state management**
-  - each feature manages its own state where appropriate
-  - keeps UI and state transitions organized
+  - Features manage their own state where appropriate
+  - Helps keep UI and state transitions organized
 
 - **Dependency injection**
   - `get_it` is used to register and access shared services and data sources
 
 - **Hybrid data flow**
-  - local storage for app persistence and cached data
-  - remote backend operations through Appwrite
+  - Local storage for persistence and cached application data
+  - Remote backend operations through Appwrite
 
-This architecture keeps the app easier to scale and navigate than a single large `lib/` folder with unrelated files mixed together.
+This structure keeps the application easier to navigate and maintain than placing unrelated functionality inside a single large `lib/` directory.
 
 ---
 
@@ -241,88 +254,116 @@ lib/
 ## 🧩 Feature Modules
 
 ### `auth/`
-Authentication flow, onboarding-related screens, and auth widgets.
+
+Authentication flow, onboarding-related screens, and authentication widgets.
 
 ### `home/`
-Home screen, product discovery, and highlighted collections.
+
+Home screen, product discovery, featured products, discounts, and highlighted collections.
 
 ### `search/`
-Search input, results screen, categories, and filter UI.
+
+Search input, search results, product categories, recent searches, and filtering UI.
 
 ### `product_details/`
-Product information, reviews, similar items, and add-to-cart interactions.
+
+Product information, reviews, similar items, color/size selection, and add-to-cart interactions.
 
 ### `wishlist/`
+
 Wishlist screens and product-saving behavior.
 
 ### `shopping_bag/`
-Cart state, bag UI, quantity handling, and pricing display.
+
+Cart state, shopping-bag UI, quantity handling, product variants, and pricing information.
 
 ### `checkout/`
-Address handling, method selection, payment flow, and order review.
+
+Address handling, delivery/payment method selection, checkout steps, and order review.
 
 ### `orders/`
-Orders list, order details, and order rating/review functionality.
+
+Order list, order details, ratings, and product-review functionality.
 
 ### `profile/`
-Personal details, profile screens, and shopping address management.
+
+Personal details, profile management, shopping addresses, and related user settings.
 
 ### `maps/`
-Map-based location features used by the shopping/address flow.
+
+Map-based location functionality used by the address and delivery flows.
 
 ### `main_navigation/`
-Main app shell / navigation container after authentication.
+
+Main authenticated application shell and navigation container.
+
+### `settings/`
+
+Application settings interface.
 
 ---
 
 ## 💾 Data Handling
 
-The app combines **local persistence** and **remote cloud operations**.
+The app combines **local persistence** with **remote cloud operations**.
 
 ### Local
-Used for:
-- caching product/order-related data
-- local app persistence
-- supporting offline-friendly or restart-friendly behavior
 
-Main local tools:
+Used for:
+
+- Caching product and order-related data
+- Persisting app data between sessions
+- Storing lightweight application preferences
+- Supporting restart-friendly app behavior
+
+Main local technologies:
+
 - SQLite (`sqflite`)
 - SharedPreferences
 
 ### Remote
-Used for:
-- product retrieval
-- profile-related updates
-- reviews
-- addresses/locations
-- cloud-backed user and order data
 
-Main remote tool:
+Used for:
+
+- Product retrieval
+- User/profile updates
+- Reviews
+- Addresses and locations
+- Orders
+- Cloud-backed application data
+- Profile image storage
+
+Main remote technology:
+
 - Appwrite
 
 ---
 
 ## 🖼️ Assets
 
-The app uses:
-- product images
-- icons
-- app branding
-- custom fonts
+The application uses:
+
+- Product images
+- Icons
+- App branding
+- Custom fonts
 
 Configured asset groups include:
 
-- `assets/images/`
-- `assets/icons/`
-- `assets/products_images/Jackets/`
-- `assets/products_images/Pants/`
-- `assets/products_images/Shirts/`
-- `assets/products_images/Shorts/`
-- `assets/products_images/Sportwears/`
-- `assets/products_images/Suits/`
-- `assets/products_images/T-Shirts/`
+```text
+assets/images/
+assets/icons/
+assets/products_images/Jackets/
+assets/products_images/Pants/
+assets/products_images/Shirts/
+assets/products_images/Shorts/
+assets/products_images/Sportwears/
+assets/products_images/Suits/
+assets/products_images/T-Shirts/
+```
 
 Custom fonts include:
+
 - Bentham
 - Tiro Gurmukhi
 - DM Sans
@@ -333,20 +374,20 @@ Custom fonts include:
 
 ## ⚙️ Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Mahmoudmnb/flutter-ecommerce-shop.git
 cd flutter-ecommerce-shop
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-### 3. Run the app
+### 3. Run the Application
 
 ```bash
 flutter run
@@ -356,47 +397,58 @@ flutter run
 
 ## 🔧 Configuration Notes
 
-Before running the full app experience, review the following:
+Before running the complete application experience, review the following configuration requirements.
 
 ### Appwrite
-This project uses Appwrite for some remote operations.
 
-If you want to run the app with your own backend, you may need to update:
-- Appwrite project configuration
-- database IDs
-- collection IDs
-- storage bucket IDs
+The project uses Appwrite for remote data operations.
 
-These values are referenced in the remote data source layer.
+If you want to run the application using your own backend, you may need to configure:
+
+- Appwrite project ID
+- Database IDs
+- Collection IDs
+- Storage bucket IDs
+
+These values are referenced primarily in the remote data-source layer.
+
+> Some backend identifiers are part of the original project configuration and may need to be replaced with your own Appwrite resources.
 
 ### Google Maps
-If you run the maps functionality, you may need to configure:
+
+To use map/location functionality, configure the required Google Maps API keys for the target platform.
+
+Depending on the platform, this may include:
+
 - Android Google Maps API key
-- iOS Google Maps setup (if building for iOS)
+- iOS Google Maps configuration
 
 ### Local Database / Persistence
-The app also uses:
+
+The application uses:
+
 - SQLite
 - SharedPreferences
 
-No extra setup is usually needed beyond dependency installation, but platform support must be available.
+These are initialized locally by the application and generally do not require separate external configuration.
 
 ---
 
-## 🧪 Code Quality / Refactor Notes
+## 🧪 Code Quality & Refactoring
 
-This repository has been refactored to improve:
+The repository has been refactored to improve:
 
-- folder naming
-- file naming
-- feature grouping
-- import organization
-- readability
-- maintainability
+- Folder naming
+- File naming
+- Feature organization
+- Import consistency
+- Readability
+- Maintainability
+- Separation of shared and feature-specific code
 
-The refactor was intended to preserve the app’s existing behavior while making the project easier to understand and present professionally.
+The refactor was intentionally performed without changing the application's core behavior, UI flow, state-management behavior, backend contracts, or persisted data structures.
 
-If needed, additional implementation notes can be found in:
+Additional implementation details and refactor notes are available in:
 
 ```text
 REFACTOR_NOTES.md
@@ -408,31 +460,40 @@ REFACTOR_NOTES.md
 
 **Open-source portfolio project**
 
-This repository represents a practical Flutter e-commerce application and is intended as a portfolio/demo project.
+This repository represents a practical Flutter e-commerce application developed as a portfolio and learning project.
 
 It demonstrates:
 
-- Flutter mobile UI development
-- BLoC/Cubit state management
-- local persistence
-- backend integration
-- modular feature organization
+- Flutter mobile application development
+- Feature-based project organization
+- BLoC / Cubit state management
+- Local persistence
+- Appwrite backend integration
+- Dependency injection
+- Product search and filtering
+- Shopping cart and wishlist flows
+- Checkout and order management
+- Location and address handling
 
-It should be considered a strong application project, but not necessarily a production-ready commercial app without further backend/security/release hardening.
+The project should be considered a **portfolio/demo application rather than a production-ready commercial e-commerce platform** without additional security, testing, backend, and release hardening.
 
 ---
 
 ## 🔮 Possible Future Improvements
 
-- stronger backend abstraction
-- payment workflow expansion
-- better offline synchronization
-- push notifications
-- favorites/recommendation improvements
-- unit and widget test coverage
+Potential future improvements include:
+
+- Stronger backend abstraction
+- Improved offline synchronization
+- Expanded payment integration
+- Push notifications
+- Enhanced recommendation features
+- Better automated test coverage
 - CI/CD integration
-- dark mode support
-- admin dashboard/backend management tools
+- Dark mode
+- Admin dashboard and product-management tools
+- Improved error handling
+- More comprehensive security configuration
 
 ---
 
@@ -449,4 +510,4 @@ Flutter Developer & Audio AI Engineer
 
 ## 📄 License
 
-Add your preferred license in a `LICENSE` file and update this section if needed.
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for details.
