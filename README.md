@@ -49,6 +49,7 @@ A full walkthrough of the Elegance Flutter e-commerce application is available i
 ---
 
 
+
 ## 🚀 Features
 
 ### Authentication
