@@ -34,10 +34,6 @@ The project is designed as a practical end-to-end mobile commerce experience rat
 
 ## 📱 App Preview
 
-> Add the screens overview image to:
->
-> `docs/images/app-screens-overview.png`
-
 <p align="center">
   <img src="docs/images/app-screens-overview.png" alt="Elegance app screens overview" width="100%">
 </p>
@@ -46,13 +42,12 @@ The project is designed as a practical end-to-end mobile commerce experience rat
 
 ## 🎥 Demo Video
 
-If you have uploaded your demo video to YouTube, Google Drive, or another public link, place it here:
+A full walkthrough of the Elegance Flutter e-commerce application is available in the project release:
 
-**Demo video:** [Watch the app demo](YOUR_VIDEO_LINK_HERE)
-
-> Replace `YOUR_VIDEO_LINK_HERE` with your actual public video URL.
+[▶️ Watch the Elegance App Demo](https://github.com/Mahmoudmnb/flutter-ecommerce-shop/releases/tag/demo-video)
 
 ---
+
 
 ## 🚀 Features
 
