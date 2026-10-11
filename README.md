@@ -34,9 +34,6 @@ The project is designed as a practical end-to-end mobile commerce experience rat
 
 ## 📱 App Preview
 
-> Add the screens overview image to:
->
-> `docs/images/app-screens-overview.png`
 
 <p align="center">
   <img src="docs/images/app-screens-overview.png" alt="Elegance app screens overview" width="100%">
@@ -449,4 +446,4 @@ Flutter Developer & Audio AI Engineer
 
 ## 📄 License
 
-Add your preferred license in a `LICENSE` file and update this section if needed.
+This repository is provided for portfolio and educational purposes. See the [`LICENSE`](LICENSE) file for details.
